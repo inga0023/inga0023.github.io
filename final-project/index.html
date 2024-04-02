@@ -36,16 +36,17 @@
 <body>
     <header>
       <div class="wrapper">
+        <img src="images/logo.png" alt="logo">
   <!--   remove lines  from Nav  -->
         <nav>
           <!-- to add background color black to all  & add image on home out of wrapper  -->
           <!-- nav display block -->
           <ul>
           <li><a href="#">Home</a></li> 
-          <li><a href="#">About us</a></li> 
-          <li><a href="#">Service</a></li> 
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about-us">About-us</a></li> 
+          <li><a href="#service">Service</a></li> 
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact</a></li>
           </ul>
         </nav> 
         <form action="index.html">
@@ -67,14 +68,14 @@
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, debitis! Esse tempora minima dolores ullam nihil sit perspiciatis earum. Dolorem ad exercitationem aperiam delectus voluptatibus odio eius dignissimos corrupti at?</p>
             <!-- add yellow color to link -->
             <a href="#" class="button btn-white">Connect With Us <i class="fa-solid fa-caret-right"></i></a>
-            <img src="images/about-us.jpg" alt="About us"/>
+            <img src="images/about-us.jpg" alt="about-us"/>
           </div>
         </section>
 
         <!-- requires a bleed, so add bg color to .about -->
         <section class="about">
           <!-- centers/adds width to content inside bleed-->
-          <div class="wrapper">
+          <div class="wrapper" id="about-us">
             <h1>About us </h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, itaque necessitatibus? Qui quis, similique aperiam, expedita tempore laboriosam vel nostrum quibusdam a rerum tenetur esse. Temporibus maiores pariatur animi aliquam.</p>
           </div>
@@ -82,7 +83,7 @@
 
         <!--display grid at breakpoint for all direct child elements-->
         <section class="services">
-          <div class="wrapper">
+          <div class="wrapper" id="service">
               <h1>Our Services</h1>
 
               <section class="digital">
@@ -128,7 +129,7 @@
           </section>
 
 
-          <section class="team">
+          <section class="team" id="team">
             <h1>Our Team</h1>
             <img src="images/john.jpg" alt="Profile"/>
             <!-- add background color yellow -->
@@ -145,7 +146,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore facilis repellat doloribus voluptates placeat eos neque iusto? Nesciunt, aspernatur. Fugiat eius eos saepe perferendis inventore debitis architecto nam reiciendis?</p>
           </section>
 
-          <section>
+          <section id="contact">
             <h1>Contact us</h1>
             <h2>Send us a message</h2>
             <form action="index.html" class="contact_form">
