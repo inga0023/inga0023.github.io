@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project inga0023</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://kit.fontawesome.com/7607113491.js" crossorigin="anonymous"></script>
-    <!--
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Project inga0023</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/7607113491.js" crossorigin="anonymous"></script>
+  <!--
     <style>
       .wrapper {
         margin: auto;
@@ -34,166 +35,189 @@
     </style>
     -->
 </head>
+
 <body>
-    <header>
-      <div class="wrapper">
-        <img src="images/logo.png" alt="logo">
-  <!--   remove lines  from Nav  -->
-        <nav>
-          <!-- to add background color black to all  & add image on home out of wrapper  -->
-          <!-- nav display block -->
-          <ul>
-          <li><a href="#">Home</a></li> 
-          <li><a href="#about-us">About-us</a></li> 
-          <li><a href="#service">Service</a></li> 
+  <header class="header">
+      <img src="images/logo.png" alt="logo" class="header_img">
+      
+      <nav class="header_nav">
+        <!-- to add background color black to all  & add image on home out of wrapper  -->
+        <!-- nav display block -->
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about-us">About-us</a></li>
+          <li><a href="#service">Service</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav> 
-        <form action="index.html">
-          <input type="text" placeholder="Search" name="search">
-          <!-- add search icon color background-->
-          <i class="fa-solid fa-magnifying-glass"></i>
-          </form>
+        </ul>
+      </nav>
+      <form action="index.html">
+        <input type="text" placeholder="Search" name="search">
+        <!-- add search icon color background-->
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+  </header>
+
+  <main>
+    <!-- add sections to avoid mixed information -->
+    <!-- wrapper to center  -->
+    <!-- text color white -->
+
+    <section class="welcome">
+      <div class="wrapper welcome_section_wrapper">
+        <div class="welcome_text_container">
+          <h1>Welcome to three Star Media</h1>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, debitis! Esse tempora minima dolores
+            ullam nihil sit perspiciatis earum. Dolorem ad exercitationem aperiam delectus voluptatibus odio eius
+            dignissimos corrupti at?</p>
+          <!-- add yellow color to link -->
+          <a href="#" class="button btn-gold">Connect With Us <i class="fa-solid fa-caret-right"></i></a>
+          <!-- <img src="images/about-us.jpg" alt="about-us" /> -->
         </div>
-      </header>
+        <div class="dark_shade"></div>
+      </div>
+    </section>
 
-      <main>
-        <!-- add sections to avoid mixed information -->
-        <!-- wrapper to center  -->
-        <!-- text color white -->
+    <!-- requires a bleed, so add bg color to .about -->
+    <section class="about">
+      <!-- centers/adds width to content inside bleed-->
+      <div class="wrapper" id="about-us">
+        <h1>About us </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, itaque necessitatibus? Qui quis, similique
+          aperiam, expedita tempore laboriosam vel nostrum quibusdam a rerum tenetur esse. Temporibus maiores pariatur
+          animi aliquam.</p>
+      </div>
+    </section>
 
-        <section class="welcome">
-          <div class="wrapper">
-            <h1>Welcome to three Star Media</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, debitis! Esse tempora minima dolores ullam nihil sit perspiciatis earum. Dolorem ad exercitationem aperiam delectus voluptatibus odio eius dignissimos corrupti at?</p>
-            <!-- add yellow color to link -->
-            <a href="#" class="button btn-white">Connect With Us <i class="fa-solid fa-caret-right"></i></a>
-            <img src="images/about-us.jpg" alt="about-us"/>
-          </div>
+    <!--display grid at breakpoint for all direct child elements-->
+    <section class="services">
+      <div class="wrapper" id="service">
+        <h1>Our Services</h1>
+
+        <section class="digital">
+          <img src="images/digital.jpg" alt="Our service" />
+          <h4>Digital transformation</h4>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus perferendis recusandae illum,
+            minima voluptatem maiores molestias rerum. Earum ea ex pariatur veritatis molestiae sunt ipsam aut maiores
+            temporibus cumque?</p>
+          <a href="#" class="button btn-black">Read <i class="fa-solid fa-caret-right"></i></a>
         </section>
 
-        <!-- requires a bleed, so add bg color to .about -->
-        <section class="about">
-          <!-- centers/adds width to content inside bleed-->
-          <div class="wrapper" id="about-us">
-            <h1>About us </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, itaque necessitatibus? Qui quis, similique aperiam, expedita tempore laboriosam vel nostrum quibusdam a rerum tenetur esse. Temporibus maiores pariatur animi aliquam.</p>
-          </div>
+        <section class="marketing">
+          <img src="images/marketing.jpg" alt="Marketing" />
+          <h2>Marketing</h2>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi officia cum sit recusandae ut rem
+            eos, facilis repellendus nemo distinctio nulla iure sunt vero libero maiores! Repellat, reiciendis.
+            Cupiditate!</p>
+          <a href="#" class="button btn-white">Marketing plans <i class="fa-solid fa-caret-right"></i></a>
         </section>
 
-        <!--display grid at breakpoint for all direct child elements-->
-        <section class="services">
-          <div class="wrapper" id="service">
-              <h1>Our Services</h1>
-
-              <section class="digital">
-                <img src="images/digital.jpg" alt="Our service"/>
-                <h4>Digital transformation</h4>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus perferendis recusandae illum, minima voluptatem maiores molestias rerum. Earum ea ex pariatur veritatis molestiae sunt ipsam aut maiores temporibus cumque?</p>
-                <a href="#" class="button btn-black">Read <i class="fa-solid fa-caret-right"></i></a>
-              </section>    
-          
-              <section class="marketing">
-                  <img src="images/marketing.jpg" alt="Marketing"/>
-                  <h2>Marketing</h2>
-                  <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi officia cum sit recusandae ut rem eos, facilis repellendus nemo distinctio nulla iure sunt vero libero maiores! Repellat, reiciendis. Cupiditate!</p>
-                  <a href="#" class="button btn-white">Marketing plans <i class="fa-solid fa-caret-right"></i></a>
-              </section>
-
-              <section class="video">
-                  <img src="images/video.jpg" alt="Video Production"/>
-                  <h1>Video Production</h1>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit exercitationem repellendus, aspernatur architecto cumque facere aliquam laboriosam expedita explicabo ut voluptate eius optio error consectetur voluptatum quam, in delectus!</p>
-                  <a href="#" class="button btn-white">Video Plan <i class="fa-solid fa-caret-right"></i></a>
-              </section>
-          
-              <section class="web">
-                <img src="images/web.jpg" alt="web development"/>
-                <h2>Web development</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste aut eligendi, minus officia illum, dolor soluta consequuntur, consequatur tenetur tempore fuga in. Dolore incidunt quae ea fugit fugiat tenetur!</p>
-                <a href="#" class="button btn-white">Web plan <i class="fa-solid fa-caret-right"></i></a>
-              </section>
-
-              <section class="print">
-                <img src="images/print.jpg" alt="Print"/>
-                <h1>Print</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sint facere repellendus, hic ratione vero qui temporibus soluta ipsum doloribus magnam, minima nemo tempora nisi commodi laborum molestias? A, commodi!</p>
-              </section>
-            </div>
+        <section class="video">
+          <img src="images/video.jpg" alt="Video Production" />
+          <h1>Video Production</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit exercitationem repellendus,
+            aspernatur architecto cumque facere aliquam laboriosam expedita explicabo ut voluptate eius optio error
+            consectetur voluptatum quam, in delectus!</p>
+          <a href="#" class="button btn-white">Video Plan <i class="fa-solid fa-caret-right"></i></a>
         </section>
 
-          <section class="vision">
-            <h2>Our Vision</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore cumque quam voluptates alias illum minus libero sint ipsa a id iure natus debitis placeat ex dolor neque, aut obcaecati.</p>
-              <a href="#" class="button btn-white">Learn More <i class="fa-solid fa-caret-right"></i></a>
-          </section>
+        <section class="web">
+          <img src="images/web.jpg" alt="web development" />
+          <h2>Web development</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste aut eligendi, minus officia illum,
+            dolor soluta consequuntur, consequatur tenetur tempore fuga in. Dolore incidunt quae ea fugit fugiat
+            tenetur!</p>
+          <a href="#" class="button btn-white">Web plan <i class="fa-solid fa-caret-right"></i></a>
+        </section>
+
+        <section class="print">
+          <img src="images/print.jpg" alt="Print" />
+          <h1>Print</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sint facere repellendus, hic ratione
+            vero qui temporibus soluta ipsum doloribus magnam, minima nemo tempora nisi commodi laborum molestias? A,
+            commodi!</p>
+        </section>
+      </div>
+    </section>
+
+    <section class="vision">
+      <h2>Our Vision</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore cumque quam voluptates alias illum
+        minus libero sint ipsa a id iure natus debitis placeat ex dolor neque, aut obcaecati.</p>
+      <a href="#" class="button btn-white">Learn More <i class="fa-solid fa-caret-right"></i></a>
+    </section>
 
 
-          <section class="team" id="team">
-            <h1>Our Team</h1>
-            <img src="images/john.jpg" alt="Profile"/>
-            <!-- add background color yellow -->
-            <h2>John Doe</h2>
-            <p><b>CEO and Co-owner</b></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas id officiis beatae. Ut minima suscipit ex illo debitis nulla accusantium libero error, nobis, earum quo, modi dolores ea? Eum, deserunt.</p>
-          </section>
-<!-- add comment -->
-          <section>
-            <img src="images/bob.jpg" alt="Profile"/>
-            <!-- addbackground color and border on names -->
-            <h1>Bob Rite</h1>
-            <h4>CFO and Co-owner</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore facilis repellat doloribus voluptates placeat eos neque iusto? Nesciunt, aspernatur. Fugiat eius eos saepe perferendis inventore debitis architecto nam reiciendis?</p>
-          </section>
+    <section class="team" id="team">
+      <h1>Our Team</h1>
+      <img src="images/john.jpg" alt="Profile" />
+      <!-- add background color yellow -->
+      <h2>John Doe</h2>
+      <p><b>CEO and Co-owner</b></p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas id officiis beatae. Ut minima suscipit ex illo
+        debitis nulla accusantium libero error, nobis, earum quo, modi dolores ea? Eum, deserunt.</p>
+    </section>
+    <!-- add comment -->
+    <section>
+      <img src="images/bob.jpg" alt="Profile" />
+      <!-- addbackground color and border on names -->
+      <h1>Bob Rite</h1>
+      <h4>CFO and Co-owner</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore facilis repellat doloribus
+        voluptates placeat eos neque iusto? Nesciunt, aspernatur. Fugiat eius eos saepe perferendis inventore debitis
+        architecto nam reiciendis?</p>
+    </section>
 
-          <section id="contact">
-            <h1>Contact us</h1>
-            <h2>Send us a message</h2>
-            <form action="index.html" class="contact_form">
-              <label for="fname">First name</label><br>
-              <textarea id="fname" name="message" rows="1" cols="60">
+    <section id="contact">
+      <h1>Contact us</h1>
+      <h2>Send us a message</h2>
+      <form action="index.html" class="contact_form">
+        <label for="fname">First name</label><br>
+        <textarea id="fname" name="message" rows="1" cols="60">
               </textarea><br>
-              <label for="email"> Email</label><br>
-              <textarea id="email" name="message" rows="1" cols="60">
+        <label for="email"> Email</label><br>
+        <textarea id="email" name="message" rows="1" cols="60">
               </textarea><br>
-              <label for="message"> Your Message</label><br>
-              <textarea id="message" name="message" rows="7" cols="60">
+        <label for="message"> Your Message</label><br>
+        <textarea id="message" name="message" rows="7" cols="60">
               </textarea><br>
-              <!-- add background color black and text color -->
-              <input type="submit" value="send">
-            </form>
-          </section>
+        <!-- add background color black and text color -->
+        <input type="submit" value="send">
+      </form>
+    </section>
 
-          <section>
-            <h1>Hours of operation</h1>
-            <!-- add border to table -->
-            <table>
-              <tr>
-                <td>Days</td>
-                <td>Hours</td>
-              </tr>
-              <tr>
-              <td>Monday-Friday</td>
-              <td>9AM-6PM</td>
-              </tr>
-              <tr>
-                <td>Saturday-Sunday</td>
-                <td>Closed</td>
-              </tr>
-            </table>
-          </section>
+    <section>
+      <h1>Hours of operation</h1>
+      <!-- add border to table -->
+      <table>
+        <tr>
+          <td>Days</td>
+          <td>Hours</td>
+        </tr>
+        <tr>
+          <td>Monday-Friday</td>
+          <td>9AM-6PM</td>
+        </tr>
+        <tr>
+          <td>Saturday-Sunday</td>
+          <td>Closed</td>
+        </tr>
+      </table>
+    </section>
 
-          <section>
-            <h1>Location</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268613!2d-75.75750062385792!3d45.34993724105543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711814613126!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </section>
-     </main>
-     <footer>
-      <!-- add background color black and text color -->
-      <p>@ Copyright Three Star Media, 2020</p>
-      <p>All Images are taken from Unsplash</p>
-     </footer>
+    <section>
+      <h1>Location</h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268613!2d-75.75750062385792!3d45.34993724105543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711814613126!5m2!1sen!2sca"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <footer>
+    <!-- add background color black and text color -->
+    <p>@ Copyright Three Star Media, 2020</p>
+    <p>All Images are taken from Unsplash</p>
+  </footer>
 </body>
-</html>
 
+</html>
