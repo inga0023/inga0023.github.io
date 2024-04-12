@@ -8,22 +8,75 @@ body {}
 
 .wrapper{
     /* position: relative; */
-    width:100%;
-    margin: 0 auto;
+   max: width 760px;;
+    margin: auto;
 
 }
+header {
+    background-color: #333;
+  }
 
 .header_img{
     /* position: absolute; */
-    top: 0;
-    left: 0;
+    /* top: 0; */
+    /* left: 0; */
 }
 
 .header_nav {
-    list-style: none;
-    text-decoration: none; 
-    /* margin-top: 100px; */
+   color:#c78c06;
 }
+.header{
+}
+
+.wrapper{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* button section  */
+.btn-black{
+    background-color: black;
+    padding:14px 25px;
+    color:white;
+    text-decoration: none;
+
+}
+/* marketing section */
+.marketing-page{
+    background-color:#ffe6ac;
+padding:40px 10px 20px;
+text-decoration: none;}
+
+
+/* about section */
+.about-page{
+    background-color: #ffe6ac;
+}
+/* Digital section */
+.digital-trans{
+    background-color: #ffe6ac;
+    padding: 40px 10px 20px;
+}
+/* video production section */
+.video-page{
+    background-color:#ffe6ac;
+    padding:40px 10px 20px;
+}
+/* web development section */
+.web-page{
+    background-color:#ffe6ac;
+    padding:40px 10px 20px;
+}
+/* print section */
+.print-page{
+    background-color:#ffe6ac;
+    padding: 40px 10px 20px;
+
+}
+
+
 
 /* WELCOME SECTION */
 

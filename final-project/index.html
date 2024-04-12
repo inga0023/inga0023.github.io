@@ -36,11 +36,13 @@
     -->
 </head>
 
+
+
 <body>
-  <header class="header">
-      <img src="images/logo.png" alt="logo" class="header_img">
-      
-      <nav class="header_nav">
+  <header>
+    <div class="wrapper">
+      <img src="images/logo.png" alt="logo">
+      <nav>
         <!-- to add background color black to all  & add image on home out of wrapper  -->
         <!-- nav display block -->
         <ul>
@@ -54,9 +56,14 @@
       <form action="index.html">
         <input type="text" placeholder="Search" name="search">
         <!-- add search icon color background-->
-        <i class="fa-solid fa-magnifying-glass"></i>
       </form>
+    </div>
   </header>
+ 
+
+
+
+
 
   <main>
     <!-- add sections to avoid mixed information -->
@@ -79,14 +86,15 @@
     </section>
 
     <!-- requires a bleed, so add bg color to .about -->
-    <section class="about">
+
+    <section class="about-page"><br>
+      <img src="images/about-us.jpg" alt="About us"/>
       <!-- centers/adds width to content inside bleed-->
-      <div class="wrapper" id="about-us">
         <h1>About us </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, itaque necessitatibus? Qui quis, similique
           aperiam, expedita tempore laboriosam vel nostrum quibusdam a rerum tenetur esse. Temporibus maiores pariatur
           animi aliquam.</p>
-      </div>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum cum ullam asperiores rem error quaerat totam sequi sed suscipit modi quis, animi corporis dolores tenetur dolorem qui dignissimos velit aut?</p>
     </section>
 
     <!--display grid at breakpoint for all direct child elements-->
@@ -96,46 +104,57 @@
 
         <section class="digital">
           <img src="images/digital.jpg" alt="Our service" />
+          <div class="digital-trans">
           <h4>Digital transformation</h4>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus perferendis recusandae illum,
             minima voluptatem maiores molestias rerum. Earum ea ex pariatur veritatis molestiae sunt ipsam aut maiores
             temporibus cumque?</p>
-          <a href="#" class="button btn-black">Read <i class="fa-solid fa-caret-right"></i></a>
+          <a href="#" class="btn-black">Digital Plans  <i class="fa-solid fa-caret-right"></i></a>
+        </div>
         </section>
 
         <section class="marketing">
           <img src="images/marketing.jpg" alt="Marketing" />
+          <div class="marketing-page">
           <h2>Marketing</h2>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi officia cum sit recusandae ut rem
             eos, facilis repellendus nemo distinctio nulla iure sunt vero libero maiores! Repellat, reiciendis.
             Cupiditate!</p>
-          <a href="#" class="button btn-white">Marketing plans <i class="fa-solid fa-caret-right"></i></a>
+          <a href="#" class="button btn-black">Marketing plans <i class="fa-solid fa-caret-right"></i></a>
+          </div>
         </section>
 
         <section class="video">
           <img src="images/video.jpg" alt="Video Production" />
+          <div class="video-page">
           <h1>Video Production</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas odit exercitationem repellendus,
             aspernatur architecto cumque facere aliquam laboriosam expedita explicabo ut voluptate eius optio error
             consectetur voluptatum quam, in delectus!</p>
-          <a href="#" class="button btn-white">Video Plan <i class="fa-solid fa-caret-right"></i></a>
+          <a href="#" class="button btn-black">Video Plan <i class="fa-solid fa-caret-right"></i></a>
+          </div>
         </section>
 
         <section class="web">
           <img src="images/web.jpg" alt="web development" />
+          <div class="web-page">
           <h2>Web development</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iste aut eligendi, minus officia illum,
             dolor soluta consequuntur, consequatur tenetur tempore fuga in. Dolore incidunt quae ea fugit fugiat
             tenetur!</p>
-          <a href="#" class="button btn-white">Web plan <i class="fa-solid fa-caret-right"></i></a>
+          <a href="#" class="button btn-black">Web plan <i class="fa-solid fa-caret-right"></i></a>
+          </div>
         </section>
 
         <section class="print">
           <img src="images/print.jpg" alt="Print" />
+          <div class="print-page">
           <h1>Print</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente sint facere repellendus, hic ratione
             vero qui temporibus soluta ipsum doloribus magnam, minima nemo tempora nisi commodi laborum molestias? A,
             commodi!</p>
+            <a href="#" class="button btn-black">Print<i class="fa-solid fa-caret-right"></i></a>
+            </div>
         </section>
       </div>
     </section>
@@ -144,7 +163,7 @@
       <h2>Our Vision</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore cumque quam voluptates alias illum
         minus libero sint ipsa a id iure natus debitis placeat ex dolor neque, aut obcaecati.</p>
-      <a href="#" class="button btn-white">Learn More <i class="fa-solid fa-caret-right"></i></a>
+      <a href="#" class="button btn-black">Learn More <i class="fa-solid fa-caret-right"></i></a>
     </section>
 
 
