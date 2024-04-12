@@ -43,6 +43,16 @@ header {
     text-decoration: none;
 
 }
+.btn-send{
+    background-color:#000;
+    text-decoration: none;
+    color:#c78c06;
+    padding: 10px 30px;
+
+
+
+}
+
 /* marketing section */
 .marketing-page{
     background-color:#ffe6ac;
@@ -75,7 +85,19 @@ text-decoration: none;}
     padding: 40px 10px 20px;
 
 }
+/* section vison */
+.vision{
+    background-image: url('../images/vision.jpg');
+    color:white;
 
+}
+/* Our team section */
+.team-page{
+    background-color:#ffe6ac;
+}
+.cfo-page{
+    background-color: #ffe6ac;
+}
 
 
 /* WELCOME SECTION */
@@ -116,6 +138,26 @@ text-decoration: none;}
     opacity: .7;
     z-index: 0;
 }
+/* table section */
+table, th, td {
+    border:1px solid;
+}
+table{
+    width:100%;
+    border-collapse: collapse;
+}
+
+.day{
+    background-color:#ffe6ac;
+}
+.footer{
+    background-color:#000;
+    color:#c78c06;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
 
 /* @media screen and (min-width: 400px) and (max-width: 1000px) {
 
