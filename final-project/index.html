@@ -41,22 +41,27 @@
 <body>
   <header>
     <div class="wrapper">
+      <div class="logo-image">
       <img src="images/logo.png" alt="logo">
+      </div>
       <nav>
         <!-- to add background color black to all  & add image on home out of wrapper  -->
         <!-- nav display block -->
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="#" class="active">Home </a></li>
           <li><a href="#about-us">About-us</a></li>
           <li><a href="#service">Service</a></li>
           <li><a href="#team">Team</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <form action="index.html">
-        <input type="text" placeholder="Search" name="search">
+      <div class="bar-container">
+        <form action="/search" method="get">
+            <input type="text" placeholder="Search" name="search"> 
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         <!-- add search icon color background-->
       </form>
+      </div>
     </div>
   </header>
  
@@ -88,7 +93,9 @@
     <!-- requires a bleed, so add bg color to .about -->
 
     <section class="about-page"><br>
+      <div class="about-image">
       <img src="images/about-us.jpg" alt="About us"/>
+      </div>
       <!-- centers/adds width to content inside bleed-->
         <h1>About us </h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, itaque necessitatibus? Qui quis, similique

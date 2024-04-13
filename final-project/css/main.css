@@ -1,3 +1,12 @@
+* {
+  
+    box-sizing: border-box;
+    
+}
+
+
+
+
 *,
 *::before,
 *::after {}
@@ -14,6 +23,7 @@ body {}
 }
 header {
     background-color: #333;
+    Padding:1em 0;
   }
 
 .header_img{
@@ -21,11 +31,188 @@ header {
     /* top: 0; */
     /* left: 0; */
 }
-
-.header_nav {
-   color:#c78c06;
+.logo-image{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #c78c06;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.header{
+
+
+/* nav{
+    display:flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: #c78c06;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+nav ul{
+    width: 100%;
+}
+nav li{
+    display: block;
+}
+nav a{
+    color:#c78e2b;
+border-top: 1px solid #c78c06;
+display:block;
+padding: 1em;
+display: block;
+background-color: #333;
+text-decoration: none;
+
+}
+
+nav a :first-child{
+    border-top:none;
+
+}
+
+.active{
+    background-color: #c78e2b;
+    color:#333;
+    
+}
+
+nav a:not(:last-child){
+border-bottom:1px solid #c48e2b;
+}
+
+ */
+
+ nav {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+nav ul {
+    width: 100%; /* Full width of the nav container */
+}
+  
+nav li {
+    display: block;
+}
+  
+nav a {
+    display: block; /* Make links fill the li element */
+    padding: 1em; /* Padding for the links */
+    color: #c78c06; /* Text color for the links */
+    text-decoration: none; /* Remove underlines from links */
+    text-align: center; /* Center text within the link */
+    background-color: #333; /* Dark background for the links */
+    border-top: 1px solid  #c78c06; /* Gold top border for separation */
+}
+nav a:first-child {
+    border-top: none;
+   
+}
+  
+nav a:not(:last-child) {
+    border-bottom: 1px solid  #c78c06;
+}
+/* The active link style */
+.active {
+    background-color:  #c78c06;
+    color: #333; 
+    margin-right: 20px;
+    margin-top: -16px;
+    margin-left: -20px;
+
+    /* Dark text for the active link */
+}
+
+/* nav a[href="#"] {
+    margin-left: 20px;
+} */
+/* nav li:first-child a {
+    margin-right: 20px; 
+} */
+nav ul li:first-child a.active {
+    padding-left: 40px;}
+
+    /* .bar-container{
+        display:flex;
+        justify-content: center;
+        position:relative;
+    } */
+
+    /* .bar-container input[type="text"]{
+        width:100%;
+        padding:0.4em;
+        border:2px solid #c78c06;
+        border-right: none;
+        border-radius: 5px 0 0 5px;
+    } */
+
+    /* .bar-container input[type="text"] {
+        width: 100%; 
+        padding: 0.5em;  
+          border: 2px solid #C48E2B;   
+           border-radius: 5px 0 0 5px;  
+              border-right: none;} */
+
+    /* .bar-container form{
+        position:relative;
+        width:100%;
+        margin-left: 20px;
+        margin-right:50px;
+        padding: 8px;
+    } */
+/* .bar-container button{
+    position: absolute;
+    width: 40px;
+    border: 2px solid #c78c06;
+    border-left: none;
+    background-color:#333;
+    color:#c78c06;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    height: 100%;
+    right: 0;
+    top: 0;
+    margin-left: 40px;
+    
+} */
+
+
+.bar-container {
+    display: flex; 
+    justify-content: center;
+    position: relative;
+}
+  
+.bar-container form {
+    position: relative; 
+    width: calc(100% - 2em);
+}
+  
+.bar-container input[type="text"] {
+    width: 95%; 
+    padding: 1em;  
+    border-radius: 5px 0 0 5px;
+    border-right: none; 
+}
+  
+.bar-container button {
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+    width: 4.3%; 
+    height: 100%; 
+    border: 2px solid #c78c06;  
+   border-left: 2px solid #c78c06; 
+    background-color: #333; 
+    color: #C48E2B; 
+    margin-left: 40px;
+    border-radius: 0 5px 5px 0; 
 }
 
 .wrapper{
@@ -57,34 +244,105 @@ header {
 .marketing-page{
     background-color:#ffe6ac;
 padding:40px 10px 20px;
-text-decoration: none;}
+text-decoration: none;
+margin-bottom: 30px;}
+
+.marketing img{
+    width:100%;
+    height:0 auto;
+    display:block;
+}
+.marketing p,
+h2{ margin-left: 20px;
+}
+
+
 
 
 /* about section */
 .about-page{
     background-color: #ffe6ac;
+    padding: 50px 0;
+}
+.about-page p,
+h1{ margin-left: 20px;
+}
+
+
+.about-image img{
+
+    width:100%;
+    height:0 auto;
+    display:block;
+    margin: 0 auto;
+
 }
 /* Digital section */
 .digital-trans{
     background-color: #ffe6ac;
-    padding: 40px 10px 20px;
+    padding: 50px 0;
+    margin-bottom: 60px;
 }
+
+.digital img{
+    width:100%;
+    height:0 auto;
+    display:block;
+}
+.digital-trans h4, p {
+    margin-left:20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.btn-black{
+    margin-left: 20px;
+}
+
+
 /* video production section */
 .video-page{
     background-color:#ffe6ac;
-    padding:40px 10px 20px;
+    padding:50px 0;
+    margin-bottom: 60px;
 }
+.video img{
+
+    width:100%;
+    height:0 auto;
+    display:block;
+    margin: 0 auto;}
+
+
+
 /* web development section */
 .web-page{
     background-color:#ffe6ac;
-    padding:40px 10px 20px;
+    padding:50px 0;
+    margin-bottom: 60px;
 }
+.web img{
+    width:100%;
+    height:0 auto;
+    display:block;
+    margin: 0 auto;}
+
+
+
+
 /* print section */
 .print-page{
     background-color:#ffe6ac;
-    padding: 40px 10px 20px;
-
+    padding: 50px 0;
+    margin-bottom: 60px;
 }
+.print img{
+    width:100%;
+    height:0 auto;
+    display:block;
+    margin: 0 auto;}
+
+
+
 /* section vison */
 .vision{
     background-image: url('../images/vision.jpg');
@@ -116,11 +374,15 @@ text-decoration: none;}
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
 }
 
-.welcome_section_wrapper>h1 {
-    font-size: 30px;
+.welcome_section_wrapper h1 {
+    font-size: 80px;
+}
+.welcome_text_container p{
+    font-size:30px;
 }
 
 .welcome_text_container {
@@ -153,9 +415,13 @@ table{
 .footer{
     background-color:#000;
     color:#c78c06;
+    padding:10px 20px 20px 10px;
+
     display:flex;
     flex-direction:column;
     justify-content: center;
+    /* z-index: 0; */
+
 }
 
 
@@ -177,6 +443,7 @@ table{
     justify-content: center;
     font-size: 18px;
     text-decoration: none;
+    margin-bottom: 70px;
 }
 
 .btn-gold {
