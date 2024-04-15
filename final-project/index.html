@@ -7,6 +7,9 @@
   <title>Final Project inga0023</title>
   <link rel="stylesheet" href="css/main.css">
   <script src="https://kit.fontawesome.com/7607113491.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <!--
     <style>
       .wrapper {
@@ -39,8 +42,8 @@
 
 
 <body>
+  <div class="wrapper">
   <header>
-    <div class="wrapper">
       <div class="logo-image">
       <img src="images/logo.png" alt="logo">
       </div>
@@ -62,7 +65,6 @@
         <!-- add search icon color background-->
       </form>
       </div>
-    </div>
   </header>
  
 
@@ -167,10 +169,14 @@
     </section>
 
     <section class="vision">
+      <img src="images/vision.jpg" alt="Vision"/>
+      <div class="text">
       <h2>Our Vision</h2>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere inventore cumque quam voluptates alias illum
         minus libero sint ipsa a id iure natus debitis placeat ex dolor neque, aut obcaecati.</p>
-      <a href="#" class="button btn-black">Learn More <i class="fa-solid fa-caret-right"></i></a>
+      </div>
+
+      <a href="#" class="btn-vision">Learn More <i class="fa-solid fa-caret-right"></i></a>
     </section>
 
 
@@ -186,12 +192,12 @@
         </div>
     </section>
     <!-- add comment -->
-    <section>
+    <section class="bob" id="2team">
       <img src="images/bob.jpg" alt="Profile" />
       <!-- addbackground color and border on names -->
       <div class="cfo-page">
       <h1>Bob Rite</h1>
-      <h4>CFO and Co-owner</h4>
+      <p>CFO and Co-owner</p><br>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium tempore facilis repellat doloribus
         voluptates placeat eos neque iusto? Nesciunt, aspernatur. Fugiat eius eos saepe perferendis inventore debitis
         architecto nam reiciendis?</p>
@@ -200,8 +206,9 @@
 
     <section id="contact">
       <h1>Contact us</h1>
+      <div class="contact-form">
       <h2>Send us a message</h2>
-      <form action="index.html" class="contact_form">
+      <form action="#" method="post">
         <label for="fname">First name</label><br>
         <textarea id="fname" name="message" rows="1" cols="60">
               </textarea><br>
@@ -213,10 +220,14 @@
               </textarea><br>
         <!-- add background color black and text color -->
         <a href="#" class="btn-send">send</a>
+        </form>
+        </div>
     </section>
 
     <section>
-      <h1>Hours of operation</h1>
+      <div class="hours">
+      <h1>Hours of operation </h1>
+      </div>
       <!-- add border to table -->
       <table>
         <tr>
@@ -235,18 +246,21 @@
     </section>
 
     <section>
-      <h1>Location</h1>
+      <div class="location">
+      <h1>location</h1>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.9442698268613!2d-75.75750062385792!3d45.34993724105543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711814613126!5m2!1sen!2sca"
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
     </section>
   </main>
   <footer class="footer">
     <!-- add background color black and text color -->
     <p>@ Copyright Three Star Media, 2020</p>
-    <p>All Images are taken from Unsplash</p>
+    <p>All Images are taken from <span class="underline">Unsplash</span></p>
   </footer>
+</div>
 </body>
 
 </html>
