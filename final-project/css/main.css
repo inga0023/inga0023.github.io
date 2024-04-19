@@ -570,71 +570,69 @@ td{
     background: #c78c06;
     color: black;
 }
-
+/* media querry */
 
 @media screen and (min-width: 760px) {
-
 header{ 
-display:flex;
-/* justify-content: space-between; */
-padding-left: 60px;
-}
-.logo-image{
-    margin-top: 70px;
-    margin-bottom: 90px;
-    margin-left:30px;
-    margin-right:30px;
-
-}
-.navigation{
     display:flex;
-    justify-content: space-between;
-    /* margin-top:30px; */
-    margin-left:50px;
-    margin-bottom:20px;
-    padding:100px;
-}
-.active{
-   padding-bottom:40px;
-   padding-right:30px;
-}
-.bar-container{
-    padding:7rem;
-    padding-right:2rem;
-    margin-right: 60px;
-    flex-grow: 7;
-}
-.bar-container button{
-    width:60px;
-    padding:30px;
-    padding-bottom: 13px;
-    padding-right:20px;
-    height:10%;
-    border: 2px solid #c78c06;  
-   border-left: 2px solid #c78c06; 
-    margin-left: 40px;
-    border-radius: 0 5px 5px 0; 
+    /* justify-content: space-between; */
+    padding-left: 60px;
+    }
+    .logo-image{
+        margin-top: 70px;
+        margin-bottom: 90px;
+        margin-left:30px;
+        margin-right:30px;
     
-}
-.bar-container input[type="text"] {
-    width: 95%;
-    padding: 1em;  
-    border-radius: 5px 0 0 5px;
-    border-right: none; 
-}
-.bar-container form {
-   
-}
- .abt-us{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    /* grid-column gap: 40px; */
-    justify-content: center;
- } 
- .abt-us>p{
-    grid-column-start:2;
-
-}
-
-}
-
+    }
+    .navigation{
+        display:flex;
+        justify-content: space-between;
+        /* margin-top:30px; */
+        margin-left:50px;
+        margin-bottom:20px;
+        padding:100px;
+    }
+    .active{
+       padding-bottom:40px;
+       padding-right:30px;
+    }
+    .bar-container{
+        padding:7rem;
+        padding-right:2rem;
+        margin-right: 60px;
+        flex-grow: 7;
+    }
+    .bar-container button{
+        width:60px;
+        padding:30px;
+        padding-bottom: 13px;
+        padding-right:20px;
+        height:10%;
+        border: 2px solid #c78c06;  
+       border-left: 2px solid #c78c06; 
+        margin-left: 40px;
+        border-radius: 0 5px 5px 0; 
+        
+    }
+    .bar-container input[type="text"] {
+        width: 95%;
+        padding: 1em;  
+        border-radius: 5px 0 0 5px;
+        border-right: none; 
+    }
+    .bar-container form {
+       
+    }
+     .abt-us{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        /* grid-column gap: 40px; */
+        justify-content: center;
+     } 
+     .abt-us>p{
+        grid-column-start:2;
+    
+    }
+    
+    }
